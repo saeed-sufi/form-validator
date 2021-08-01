@@ -50,7 +50,7 @@ document.addEventListener("keyup", (e) => {
 function validateForm() {
   checkRequired([name, phone, email])
   checkEmail(email)
-  checkTextLength(task, 4)
+  checkTextLength(task, 400)
 }
 
 function showError(element, message) {
