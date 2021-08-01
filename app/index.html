@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Branding</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Agency</a></li>
+          <li class="form__open-btn"><a href="#">Request</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h2>Let's create the look and feel for your future business</h2>
+      <p>With an idea and clarity throughout digital communication</p>
+    </div>
+  </main>
+  <div class="form-lightbox">
+    <form action="/https://unicorn-business.io/request" method="POST" id="form" class="form" autocomplete="off">
+      <button type="button" aria-label="Close" class="form__close-btn">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="form-control">
+        <label for="name">Name
+          <abbr title="required" aria-label="required">*</abbr>
+        </label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="phone">Phone
+          <abbr title="required" aria-label="required">*</abbr>
+        </label>
+        <input type="tel" id="phone" placeholder="Enter your phone">
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="email">Email Address
+          <abbr title="required" aria-label="required">*</abbr>
+        </label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="task">Task</label>
+        <textarea type="text" id="task" placeholder="Example Text" maxlength="400" rows='5'></textarea>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <span class="label">Budget</span>
+        <ul class="budget">
+          <li tabindex='0'>
+            <input type="radio" id="range1" name="range" value="range1" tabindex='-1'>
+            <label for="range1">$6k-$10k</label>
+          </li>
+          <li tabindex='0'>
+            <input type="radio" id="range2" name="range" value="range2" tabindex='-1'>
+            <label for="range2">$10k-$20k</label>
+          </li>
+          <li tabindex='0'>
+            <input type="radio" id="range3" name="range" value="range3" tabindex='-1'>
+            <label for="range3">over $20k</label>
+          </li>
+        </ul>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="acquaintance">How did you find out about us?</label>
+        <select class="acquaintance-options" name="" id="acquaintance">
+          <option value="">Select one...</option>
+          <option value="behance">Behance</option>
+          <option value="webflow">Webflow</option>
+          <option value="clutch">Clutch</option>
+          <option value="facebook">Facebook</option>
+          <option value="recommendation">Recommendation</option>
+          <option value="other">Other</option>
+        </select>
+        <small>Error message</small>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
