@@ -35,6 +35,9 @@ closeFormBtn.addEventListener("click", () => {
 
 openFormBtn.addEventListener("click", () => {
   formLightbox.classList.add("form-lightbox--visible")
+  setTimeout(() => {
+    name.focus()
+  }, 301);
 })
 
 document.addEventListener("keyup", (e) => {
